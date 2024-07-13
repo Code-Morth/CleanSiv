@@ -1,6 +1,6 @@
 import type { Metadata } from "next"
 import "@/styles/index.css"
-import { Footer, NavBar } from "@/components/global"
+import { Footer, NavBar } from '@/components/global'
 
 export const metadata: Metadata = {
   title: "CleanSiv",
@@ -18,7 +18,6 @@ export default function RootLayout({
         <NavBar />
         {children}
         <Footer/>
-
       </body>
     </html>
   )
