@@ -1,0 +1,17 @@
+.footer{
+
+    @apply bg-yellow-500 ;
+
+    @screen tablet{
+
+        @apply bg-red-500 ;
+
+    }
+
+    @screen laptop{
+
+        @apply  bg-blue-600 ;
+
+    }
+
+}
