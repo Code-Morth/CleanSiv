@@ -1,0 +1,10 @@
+.global-container{
+
+    @screen laptop{
+
+        padding-left: calc(16rem *var(--scale));
+        padding-right: calc(16rem *var(--scale));
+
+    }
+
+}
