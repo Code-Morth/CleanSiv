@@ -1,0 +1,16 @@
+.ServicesSection {
+
+    @screen laptop{
+
+        @apply relative;
+
+    }
+
+  .services-section-container {
+    @apply flex justify-center items-center absolute w-full;
+
+    gap: calc(2rem * var(--scale));
+    top: calc(-5rem * var(--scale));
+
+  }
+}

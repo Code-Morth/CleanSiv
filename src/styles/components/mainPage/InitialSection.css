@@ -1,5 +1,51 @@
-.InitialSection{
+.InitialSection {
+  @apply flex justify-center items-center bg-[url('/HomeImageBG1.jpg')] bg-cover h-screen bg-center text-white w-full;
 
-    @apply bg-[url('/HomeImageBG1.jpg')] bg-cover h-screen bg-center;
+  .initial-section-container {
+    @screen laptop {
+      @apply h-full flex flex-col justify-center items-center text-center;
 
+      /* width: calc(70rem * var(--scale)); */
+    }
+  }
+
+  .star-image-container-1,
+  .star-image-container-2 {
+    @screen laptop {
+      width: calc(7rem * var(--scale));
+    }
+
+    img {
+      @screen laptop {
+        @apply w-full h-full;
+      }
+    }
+  }
+
+  .star-image-container-1 {
+    @screen laptop {
+      @apply mr-auto;
+    }
+  }
+
+  .star-image-container-2 {
+    @screen laptop {
+      @apply ml-auto;
+    }
+  }
+
+  h3 {
+    @screen laptop {
+      font-size: calc(1.21rem * var(--scale));
+      font-weight: 600;
+      letter-spacing: calc(0.3rem * var(--scale));
+    }
+  }
+
+  h2 {
+    @screen laptop {
+      font-size: calc(4rem * var(--scale));
+      font-weight: 800;
+    }
+  }
 }

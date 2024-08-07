@@ -1,0 +1,58 @@
+.ResidentialSection{
+
+    @screen laptop{
+
+        margin-top: calc(10rem *var(--scale));
+
+    }
+
+    .residential-section-container{
+
+        @screen laptop{
+
+            @apply flex justify-between;
+
+            gap: calc(8rem *var(--scale));
+
+        }
+
+    }
+
+    .image-container{
+
+        @screen laptop{
+
+            width: calc(80rem *var(--scale));
+
+        }
+
+    }
+
+    .right-container{
+
+
+        h2{
+
+            @screen laptop{
+
+                @apply font-extrabold text-[#00171F];
+
+                font-size: calc(2.8rem *var(--scale));
+
+            }
+
+        }
+
+        p,ul{
+
+            @screen laptop{
+
+                @apply font-light ;
+
+            }
+
+        }
+
+    }
+
+}

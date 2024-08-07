@@ -44,7 +44,7 @@ export const NavBar = () => {
               <Image
                 width={1000}
                 height={1000}
-                src="/LogoCleansiv.svg"
+                src="/LogoCleansiv.png"
                 alt=""
                 className="logo"
               />

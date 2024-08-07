@@ -1,0 +1,45 @@
+.CardServices {
+  @screen laptop {
+    @apply flex justify-center items-center bg-white w-fit shadow-xl;
+    
+    border-top-left-radius: calc(2rem * var(--scale));
+    border-top-right-radius: calc(0.3rem * var(--scale));
+    border-bottom-right-radius: calc(2rem * var(--scale));
+    border-bottom-left-radius: calc(0.3rem * var(--scale));
+    padding-left : calc(2rem * var(--scale));
+    padding-right : calc(2rem * var(--scale));
+    gap: calc(2rem * var(--scale));
+    height: calc(10rem * var(--scale));
+
+
+  }
+
+  .image-container {
+    @screen laptop {
+
+        width: calc(5rem * var(--scale));
+
+    }
+  }
+
+  .text-container{
+
+    @screen laptop{
+        
+        width: calc(15rem * var(--scale));
+
+    }
+
+    h4{
+
+        @screen laptop{
+
+            @apply text-[#00A8E8] font-bold ;
+
+        }
+
+    }
+
+
+  }
+}
