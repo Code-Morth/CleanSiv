@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { Container } from '@/components/global'
-
+import { FaArrowRightLong } from 'react-icons/fa6'
 export const ResidentialSection = () => {
   return (
     <Container>
@@ -28,14 +28,65 @@ export const ResidentialSection = () => {
               adaptados a sus necesidades y presupuesto.
             </p>
             <ul>
-              <li>Limpieza regular</li>
-              <li>Limpieza profunda</li>
-              <li>Limpieza Move-in/Move</li>
-              <li>Limpieza de alfombras y cristales</li>
+              <li>
+                <span className='check-bg-blue-container'>
+                  <Image
+                    width={1000}
+                    height={1000}
+                    src="/CheckBgBlue.svg"
+                    alt=""
+                  />
+                </span>
+                Limpieza regular
+              </li>
+              <li>
+                <span className='check-bg-blue-container'>
+                  <Image
+                    width={1000}
+                    height={1000}
+                    src="/CheckBgBlue.svg"
+                    alt=""
+                  />
+                </span>
+                Limpieza profunda
+              </li>
+              <li>
+                <span className='check-bg-blue-container'>
+                  <Image
+                    width={1000}
+                    height={1000}
+                    src="/CheckBgBlue.svg"
+                    alt=""
+                  />
+                </span>
+                Limpieza Move-in/Move
+              </li>
+              <li>
+                <span className='check-bg-blue-container'>
+                  <Image
+                    width={1000}
+                    height={1000}
+                    src="/CheckBgBlue.svg"
+                    alt=""
+                  />
+                </span>
+                Limpieza de alfombras y cristales
+              </li>
             </ul>
-            <div className="link-degraded">
-              <Link href="">Solicita un presupuesto</Link>
-              <div className="arrow-container"></div>
+            <div className="link-degraded-container">
+              <div className="link-degraded-child">
+                <Link href="">
+                  Solicita un presupuesto
+                  <div className='image-arrow-container'>
+                    <Image
+                      width={1000}
+                      height={1000}
+                      src="/ArrowBgDegraded.svg"
+                      alt=""
+                    />
+                  </div>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
