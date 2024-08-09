@@ -1,58 +1,57 @@
-.ResidentialSection{
+.ResidentialSection {
+  @screen laptop {
+    margin-top: calc(10rem * var(--scale));
+  }
 
-    @screen laptop{
+  .residential-section-container {
+    @screen laptop {
+      @apply flex justify-between;
 
-        margin-top: calc(10rem *var(--scale));
+      gap: calc(8rem * var(--scale));
+    }
+  }
 
+  .image-container {
+    @screen laptop {
+      width: calc(80rem * var(--scale));
+    }
+  }
+
+  .right-container {
+    h3 {
+      @screen laptop {
+        @apply font-semibold;
+
+        letter-spacing: calc(0.2rem * var(--scale));
+        background: var(
+          --deg,
+          linear-gradient(
+            90deg,
+            #9adff9 0%,
+            #00a8e8 24%,
+            #007ea7 42%,
+            #00171f 60%
+          )
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
     }
 
-    .residential-section-container{
+    h2 {
+      @screen laptop {
+        @apply font-extrabold text-[#00171F];
 
-        @screen laptop{
-
-            @apply flex justify-between;
-
-            gap: calc(8rem *var(--scale));
-
-        }
-
+        font-size: calc(2.8rem * var(--scale));
+      }
     }
 
-    .image-container{
-
-        @screen laptop{
-
-            width: calc(80rem *var(--scale));
-
-        }
-
+    p,
+    ul {
+      @screen laptop {
+        @apply font-light;
+      }
     }
-
-    .right-container{
-
-
-        h2{
-
-            @screen laptop{
-
-                @apply font-extrabold text-[#00171F];
-
-                font-size: calc(2.8rem *var(--scale));
-
-            }
-
-        }
-
-        p,ul{
-
-            @screen laptop{
-
-                @apply font-light ;
-
-            }
-
-        }
-
-    }
-
+  }
 }
