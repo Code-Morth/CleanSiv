@@ -55,7 +55,7 @@ export const NavBar = () => {
             <Link href="">Cómo Trabajamos</Link>
             <Link href="">Galería</Link>
             <Link href="">Sobre Nosotros</Link>
-            <Link href="" className="contact">
+            <Link href="/RequestQuote" className="contact">
               Contactanos
               <FaArrowRightLong />
             </Link>

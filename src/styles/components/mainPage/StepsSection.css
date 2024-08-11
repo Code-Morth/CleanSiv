@@ -1,0 +1,149 @@
+.StepsSection {
+  @apply visible;
+
+  @screen tablet {
+    @apply visible;
+  }
+
+  @screen laptop {
+
+    @apply visible ;
+
+  }
+
+  .steps-section-container {
+    @apply visible;
+
+    @screen tablet {
+      @apply visible;
+    }
+
+    @screen laptop {
+      @apply flex flex-col justify-center items-center bg-[#D9EDF3];
+
+      padding-top: calc(7.5rem * var(--scale));
+      padding-bottom: calc(7.5rem * var(--scale));    
+      gap: calc(3.2rem * var(--scale));
+
+
+    }
+  }
+
+  h3 {
+    @screen laptop {
+      @apply font-semibold;
+
+      letter-spacing: calc(0.2rem * var(--scale));
+      margin-bottom:calc(-3rem * var(--scale));
+      background: var(
+        --deg,
+        linear-gradient(
+          90deg,
+          #9adff9 0%,
+          #00a8e8 24%,
+          #007ea7 42%,
+          #00171f 60%
+        )
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  h2 {
+    @screen laptop {
+      @apply font-extrabold text-[#00171F] text-center;
+      
+      width: calc(49rem * var(--scale));
+      line-height: calc(3.2rem * var(--scale));
+      font-size: calc(2.8rem * var(--scale));
+    }
+  }
+
+  .image-line-container {
+    @apply visible;
+
+    @screen tablet {
+      @apply visible;
+    }
+
+    @screen laptop {
+      
+        @apply h-auto;
+
+      width: calc(77rem * var(--scale));
+
+
+    }
+  }
+  .steps-container {
+    @apply visible;
+
+    @screen tablet {
+      @apply visible;
+    }
+
+    @screen laptop {
+      @apply flex;
+
+      margin-top: calc(-1.8rem * var(--scale));
+      width: calc(98rem * var(--scale));
+      gap: calc(2rem * var(--scale));
+
+
+    }
+  }
+
+  .step-container {
+    @apply visible;
+
+    @screen tablet {
+      @apply visible;
+    }
+
+    @screen laptop {
+      @apply flex flex-col justify-center items-center;
+
+      gap: calc(0.1rem * var(--scale));
+
+      
+    }
+
+    h4 {
+      @screen laptop {
+        @apply font-bold text-[#00171F];
+
+        line-height: calc(3.2rem * var(--scale));
+        font-size: calc(1.6rem * var(--scale));
+      }
+    }
+
+    p{
+
+        @screen laptop{
+
+            @apply font-light text-center ;
+
+        line-height: calc(1.8rem * var(--scale));
+            
+
+        }
+
+    }
+  }
+
+  .image-icon-container {
+    @apply visible;
+
+    @screen tablet {
+      @apply visible;
+    }
+
+    @screen laptop {
+      width: calc(5rem * var(--scale));
+      margin-top: calc(2rem * var(--scale));
+
+    }
+  }
+}

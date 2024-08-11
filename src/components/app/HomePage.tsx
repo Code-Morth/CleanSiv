@@ -1,11 +1,23 @@
-import { InitialSection, ResidentialSection, ServicesSection } from "@/components/mainPage"
+import {
+  AboutUsSection,
+  BusinessSection,
+  InitialSection,
+  PromotionSection,
+  ResidentialSection,
+  ServicesSection,
+  StepsSection
+} from '@/components/mainPage'
 
 export const HomePage = () => {
   return (
     <>
       <InitialSection />
-      <ServicesSection/>
-      <ResidentialSection/>
+      <ServicesSection />
+      <ResidentialSection />
+      <PromotionSection />
+      <BusinessSection />
+      <StepsSection />
+      <AboutUsSection />
     </>
   )
 }

@@ -1,0 +1,146 @@
+.AboutUsSection {
+    @screen laptop {
+      margin-top: calc(10rem * var(--scale));
+    }
+  
+    .about-us-section-container {
+      @screen laptop {
+        @apply flex flex-row-reverse justify-between;
+  
+        gap: calc(8rem * var(--scale));
+      }
+    }
+  
+    .image-container {
+      @screen laptop {
+        width: calc(70rem * var(--scale));
+      }
+    }
+  
+    .right-container {
+      @screen laptop {
+        @apply flex flex-col justify-center;
+  
+        width: calc(57rem * var(--scale));
+        /* font-size: calc(1rem * var(--scale)); */
+      }
+  
+      h3 {
+        @screen laptop {
+          @apply font-semibold;
+  
+          letter-spacing: calc(0.2rem * var(--scale));
+          background: var(
+            --deg,
+            linear-gradient(
+              90deg,
+              #9adff9 0%,
+              #00a8e8 4%,
+              #007ea7 12%,
+              #00171f 40%
+            )
+          );
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+  
+      h2 {
+        @screen laptop {
+          @apply font-extrabold text-[#00171F];
+          margin-bottom: calc(1.7rem * var(--scale)); 
+          line-height: calc(3.2rem * var(--scale));
+          font-size: calc(2.8rem * var(--scale));
+        }
+      }
+  
+      p{
+
+        @screen laptop{
+
+            @apply font-light;
+
+          font-size: calc(1.1rem * var(--scale));  
+          margin-bottom: calc(1.7rem * var(--scale));
+          
+
+        }
+
+      }
+
+  
+      ul {
+        @screen laptop {
+          @apply flex flex-col gap-1 font-light;
+        }
+      }
+  
+      li {
+        @screen laptop {
+          @apply flex gap-2 items-center;
+        }
+      }
+  
+      .check-bg-blue-container {
+        @screen laptop {
+          @apply h-auto;
+  
+          width: calc(1.1rem * var(--scale));
+        }
+      }
+    }
+  
+    .link-degraded-container {
+      @screen laptop {
+        @apply rounded-xl w-fit overflow-hidden;
+        padding: calc(0.2rem * var(--scale));
+        background: linear-gradient(
+          to right,
+          #9adff9 0%,
+          #00a8e8 24%,
+          #007ea7 42%,
+          #00171f 60%
+        );
+        margin-top: calc(1.5rem * var(--scale));
+      }
+    }
+  
+    .link-degraded-child {
+      @screen laptop {
+        @apply bg-white w-fit;
+  
+        border-radius: calc(0.5rem * var(--scale));
+        padding: calc(0.8rem * var(--scale));
+        padding-left: calc(1.8rem * var(--scale));
+        padding-right: calc(1.8rem * var(--scale));
+      }
+  
+      a {
+        @screen laptop {
+          @apply font-bold flex items-center gap-4;
+  
+          background: var(
+            --deg,
+            linear-gradient(
+              90deg,
+              #9adff9 0%,
+              #00a8e8 24%,
+              #007ea7 42%,
+              #00171f 60%
+            )
+          );
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+  
+      .image-arrow-container {
+        @screen laptop {
+          width: calc(0.9rem * var(--scale));
+        }
+      }
+    }
+  }
+  

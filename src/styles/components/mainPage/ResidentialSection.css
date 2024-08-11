@@ -19,8 +19,7 @@
 
   .right-container {
     @screen laptop {
-
-      @apply flex flex-col justify-center ;
+      @apply flex flex-col justify-center;
 
       width: calc(57rem * var(--scale));
       /* font-size: calc(1rem * var(--scale)); */
@@ -95,25 +94,29 @@
     @screen laptop {
       @apply rounded-xl w-fit overflow-hidden;
       padding: calc(0.2rem * var(--scale));
-      background: linear-gradient(to right, #9adff9 0%, #00a8e8 24%, #007ea7 42%, #00171f 60%);
-      margin-top:calc(1.5rem * var(--scale));
+      background: linear-gradient(
+        to right,
+        #9adff9 0%,
+        #00a8e8 24%,
+        #007ea7 42%,
+        #00171f 60%
+      );
+      margin-top: calc(1.5rem * var(--scale));
     }
   }
-  
-  .link-degraded-child{
 
-    @screen laptop{
+  .link-degraded-child {
+    @screen laptop {
+      @apply bg-white w-fit;
 
-      @apply bg-white w-fit rounded-xl;
-
+      border-radius: calc(0.5rem * var(--scale));
       padding: calc(0.8rem * var(--scale));
-
+      padding-left: calc(1.8rem * var(--scale));
+      padding-right: calc(1.8rem * var(--scale));
     }
 
-    a{
-
-      @screen laptop{
-
+    a {
+      @screen laptop {
         @apply font-bold flex items-center gap-4;
 
         background: var(
@@ -129,21 +132,13 @@
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-
       }
-
     }
 
-    .image-arrow-container{
-
-      @screen laptop{
-
+    .image-arrow-container {
+      @screen laptop {
         width: calc(0.9rem * var(--scale));
-
       }
-
     }
-
   }
-
 }

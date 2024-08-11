@@ -1,0 +1,165 @@
+.Footer {
+  @apply text-[#A1A1A1] bg-[#00171F];
+
+  @screen tablet {
+    @apply visible;
+  }
+
+  @screen laptop {
+    @apply visible;
+  }
+
+  .footer-container {
+    @apply visible;
+
+    @screen tablet {
+      @apply visible;
+    }
+
+    @screen laptop {
+      @apply flex flex-col justify-center items-center;
+    }
+  }
+
+  .top-container {
+    @apply visible;
+
+    @screen tablet {
+      @apply visible;
+    }
+
+    @screen laptop {
+      @apply flex justify-center items-start;
+
+      gap: calc(8rem * var(--scale));
+      padding-top: calc(3.5rem * var(--scale));
+      padding-bottom: calc(3.5rem * var(--scale));
+
+    }
+  }
+
+  .contact-container {
+    @apply visible;
+
+    @screen tablet {
+      @apply visible;
+    }
+
+    @screen laptop {
+      @apply flex flex-col ;
+
+        gap: calc(0.9rem * var(--scale));
+      
+    }
+  }
+
+  .attention-container {
+    @apply visible;
+
+    @screen tablet {
+      @apply visible;
+    }
+
+    @screen laptop {
+        @apply flex flex-col ;
+  
+          gap: calc(0.9rem * var(--scale));
+        
+      }
+  }
+
+  .social-container {
+    @apply visible;
+
+    @screen tablet {
+      @apply visible;
+    }
+
+    @screen laptop {
+        @apply flex flex-col ;
+  
+          gap: calc(0.9rem * var(--scale));
+        
+      }
+  }
+
+  .social-images-container {
+    @apply visible;
+
+    @screen tablet {
+      @apply visible;
+    }
+
+    @screen laptop {
+      @apply flex;
+
+      gap: calc(1.5rem * var(--scale));
+    }
+  }
+
+  .logo-container {
+    @apply visible;
+
+    @screen tablet {
+      @apply visible;
+    }
+
+    @screen laptop {
+      @apply flex justify-center items-center;
+
+    gap: calc(0.2rem *var(--scale));
+
+
+    }
+  }
+
+
+  .image-container {
+    @apply visible;
+
+    @screen tablet {
+      @apply visible;
+    }
+
+    @screen laptop {
+      width: calc(1rem *var(--scale));
+    }
+  }
+
+  .image-logo-container {
+    @apply visible;
+
+    @screen tablet {
+      @apply visible;
+    }
+
+    @screen laptop {
+      
+      width: calc(20rem *var(--scale));
+
+
+    }
+  }
+
+  .bottom-container {
+    @apply visible;
+
+    @screen tablet {
+      @apply visible;
+    }
+
+    @screen laptop {
+      @apply visible w-full text-center text-[#5E5E5E];
+
+      border-top: 1px solid;
+      padding: calc(1.5rem *var(--scale));
+
+    }
+  }
+
+  h3 {
+    @apply text-white font-bold;
+
+    font-size: calc(1.5rem * var(--scale));
+  }
+}

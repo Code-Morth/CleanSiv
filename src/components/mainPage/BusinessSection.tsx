@@ -1,30 +1,32 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { Container } from '@/components/global'
-export const ResidentialSection = () => {
+export const BusinessSection = () => {
   return (
     <Container>
-      <section className="ResidentialSection">
-        <div className="residential-section-container">
+      <section className="BusinessSection">
+        <div className="business-section-container">
           <div className="image-container">
             <Image
-              src="/ResidentialService.png"
+              src="/BusinessService.png"
               alt=""
               width={100000}
               height={100000}
             />
           </div>
           <div className="right-container">
-            <h3>PLANES DE LIMPIEZA PARA VIVIENDAS</h3>
-            <h2>SERVICIOS DE LIMPIEZA RESIDENCIAL</h2>
+            <h3>PLANES DE LIMPIEZA PARA OFICINAS</h3>
+            <h2>SERVICIOS DE LIMPIEZA EMPRESARIAL</h2>
             <p>
-              ¡Recupera tus fines de semana y disfruta de un hogar impecable con
-              nuestros servicios de limpieza residencial!
+              Cree una impresión duradera en sus clientes y empleados con un
+              entorno de trabajo limpio y profesional. Nuestros servicios de
+              limpieza comercial no se limitan a la limpieza superficial.
             </p>
             <p>
-              Ofrecemos planes personalizados de limpieza regular, limpieza
-              profunda para ocasiones especiales y limpieza para mudanzas,
-              adaptados a sus necesidades y presupuesto.
+              Proporcionamos una variedad de servicios para asegurar un entorno
+              de trabajo limpio y eficiente, incluyendo la limpieza diaria de
+              oficinas, servicios de limpieza general y desinfección
+              especializada.
             </p>
             <ul>
               <li>
@@ -36,7 +38,7 @@ export const ResidentialSection = () => {
                     alt=""
                   />
                 </span>
-                Limpieza regular
+                Limpieza de oficinas{' '}
               </li>
               <li>
                 <span className="check-bg-blue-container">
@@ -47,7 +49,7 @@ export const ResidentialSection = () => {
                     alt=""
                   />
                 </span>
-                Limpieza profunda
+                Limpieza de conserjería{' '}
               </li>
               <li>
                 <span className="check-bg-blue-container">
@@ -58,7 +60,7 @@ export const ResidentialSection = () => {
                     alt=""
                   />
                 </span>
-                Limpieza Move-in/Move
+                Tiendas minoristas{' '}
               </li>
               <li>
                 <span className="check-bg-blue-container">
@@ -69,7 +71,7 @@ export const ResidentialSection = () => {
                     alt=""
                   />
                 </span>
-                Limpieza de alfombras y cristales
+                Hoteles y resorts{' '}
               </li>
             </ul>
             <div className="link-degraded-container">

@@ -1,4 +1,8 @@
 @import './InitialSection.css';
-@import "./CardServices.css";
-@import "./ServicesSection.css";
-@import "./ResidentialSection.css";
+@import './CardServices.css';
+@import './ServicesSection.css';
+@import './ResidentialSection.css';
+@import './PromotionSection.css';
+@import './BusinessSection.css';
+@import './StepsSection';
+@import "./AboutUsSection";

@@ -1,0 +1,13 @@
+.PromotionSection {
+  @screen laptop {
+    @apply w-full;
+    margin-top: calc(6rem * var(--scale));
+    margin-bottom: calc(6rem * var(--scale));
+  }
+
+  .promotion-section-container {
+    @screen laptop {
+      @apply w-full;
+    }
+  }
+}
